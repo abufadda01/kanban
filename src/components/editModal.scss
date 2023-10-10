@@ -1,0 +1,109 @@
+.modal{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    overflow-x: hidden;
+    overflow-y: auto;
+    position: fixed;
+    inset: 0;
+    z-index: 100;
+
+    .modalContiner{
+        background-color: rgb(135, 135, 135);
+        padding: 10px 20px;
+    }
+
+    .modalHeader{
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        gap: 10px;
+        padding: 10px;
+
+        h3{
+            font-size: 25px;
+            font-weight: bold;
+        }
+
+        .Modalbtn{
+            margin-bottom: 10px;
+            border: none;
+            cursor: pointer;
+            border-radius: 50%;
+            background-color: transparent;
+
+            .icon{
+                font-size: 30px;
+            }
+        }
+    }
+
+
+    .inputsForm{
+        display: flex;
+        align-items: center;
+        flex-direction: column;
+
+        .form{
+            margin: 20px;
+        }
+
+        .formItem{
+            display: flex;
+            align-items: center;
+            flex-direction: column;
+            margin-bottom: 25px;
+
+            .label{
+                align-self: flex-start;
+                margin-bottom: 5px;
+                color: black;
+                font-weight: bold;
+            }
+
+            .input{
+                padding: 0px 10px;
+                width: 350px;
+                height: 40px;
+                font-size: 16px;
+                font-weight: bold;
+                color: black;
+                border: none;
+
+                &:focus{
+                    border: 2px solid black;
+                }
+            }
+
+            .priority{
+                width: 100%;
+                padding: 10px;
+                font-weight: bold;
+                font-size: 16px;
+                color: black;
+            }
+        }
+
+        .formButtons{
+            display: flex;
+            align-items: center;
+            gap: 20px;
+            margin-bottom: 20px;
+
+            button{
+                border: none;
+                font-size: 18px;
+                padding: 5px 10px;
+            }
+            
+            .submitBtn{
+                background-color: rgb(255, 100, 3);
+                color: white;
+                font-weight: 500;                
+            }
+        }
+    }
+
+
+}
