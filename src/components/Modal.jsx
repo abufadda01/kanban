@@ -67,7 +67,6 @@ const Modal = ({setOpenModal , tasks , setTasks }) => {
         setTask({...task , [name] : value})
     }
 
-    console.log(task)
 
 
   return (

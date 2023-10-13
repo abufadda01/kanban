@@ -21,19 +21,21 @@ function App() {
     if(tasksArrayInlocalStorage){
       setTasks(JSON.parse(tasksArrayInlocalStorage))
     }
+
   } , [])
 
-
-  console.log(tasks)
 
 
   return (
     <DndProvider backend={HTML5Backend}>
+
     <div className= 'flex flex-col items-center gap-16 sm:flex-wrap'>
+      
       <h2 className='text-6xl mt-3 mb-1'>Kanban Board</h2>
         <CreateTask tasks={tasks} setTasks={setTasks} openModal={openModal} setOpenModal={setOpenModal}/>
         <ListTasks tasks={tasks} setTasks={setTasks} openEditModal={openEditModal} setOpenEditModal={setOpenEditModal} />
     </div>
+
     </DndProvider>
   )
 }
